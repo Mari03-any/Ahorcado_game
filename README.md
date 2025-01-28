@@ -38,3 +38,17 @@ https://openwebinars.net/blog/como-programar-el-juego-del-ahorcado-paso-paso/
 https://www.aplitop.com/products/tcpMDT/v8/help/es/referencia/dibujar_a_partir_de_codigos.htm
 - Base de datos:
 https://es.py4e.com/html3/15-database
+
+---
+
+En este repositorio abarcaremos la alternativa número 2: El ahorcado. 
+
+1. Solución planteada:
+Para realizar el ahorcado hemos decidido usar diversas funciones relacionadas a la selección de palabras, las cuales estarán almacenadas en una lista y se escogerá cualquiera de ellas para iniciar el juego. De igual manera una con la que, dependiendo de la posición de cada letra de la palabra y la letra que se ingrese por consola, se hará un acierto y se podrá continuar con la siguiente letra, actualizando la palabra escogida; o se empezara a dibujar el ahorcado por medio de prints, reduciendo el número de oportunidades y actualizando el dibujo del ahorcado en cada intento erróneo hasta que el dibujo se complete.
+
+2. Como abordamos el problema:
+
+
+3. Diagrama:
+
+4. Notebook de python
