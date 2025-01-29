@@ -151,5 +151,3 @@ classDef pink fill:#F8BBD0,stroke:#C2185B,stroke-width:2px;
 classDef purple fill:#E1BEE7,stroke:#8E24AA,stroke-width:2px;
 
 ```
-
-**5. Notebook de python:**
