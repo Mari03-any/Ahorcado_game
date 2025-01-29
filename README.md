@@ -112,6 +112,7 @@ H1("agrega la pierna izquierda"):::orange
 I1("agrega la pierna derecha"):::orange
 J1("Perdiste, la palabra a adivinar era -palabra_generada-"):::orange
 K1("Fin"):::green
+L1("Fin"):::green
 
 %% Edges
 A --> B --> B1 --> C --> D
@@ -127,7 +128,7 @@ P --> Q
 Q -- Yes --> R
 Q -- No --> S --> N
 R --> T 
-T -- Yes --> U
+T -- Yes --> U --> L1
 T -- No --> V --> W
 W -- Sino --> X
 W -- Yes --> Y --> F
