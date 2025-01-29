@@ -247,4 +247,4 @@ print("Palabra aleatoria:", palabra) #Imprimimos de manera aleatoria la palabra 
         print("      |")
         print("=========")
      ```
-  - Funciones xx
+- Funciones xx
