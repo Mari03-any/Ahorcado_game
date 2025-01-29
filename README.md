@@ -250,7 +250,7 @@ print("Palabra aleatoria:", palabra) #Imprimimos de manera aleatoria la palabra 
 
 - Funciones
   Se definieron las funciones con respecto a las palabras, letras, variables; en la cual nos genera el juego del ahorcado.
-    ``` python
+``` pyhton
     def generar_palabra_aleatoria(palabras):
   # Se define esta funcion para seleccionar una palabra en el rango de la lista.
     indice = random.randint(0, len(palabras) - 1)
