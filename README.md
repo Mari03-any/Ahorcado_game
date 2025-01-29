@@ -67,6 +67,10 @@ Para realizar el ahorcado hemos decidido usar diversas funciones relacionadas a 
 
 Primero e hizo un analisis del juego en cuestion para entender su funcionamiento y que herramientas podriamos usar para realizarlo, también se consultaron videos, paginas y documentos en donde se realizo una lluvia de ideas la cual se utilizo para realizar el diagrama de flujo comprendiendo a profundidad el juego y su estructura lógica.
 
+A partir del diagrama, iniciamos la construcción del banco de palabras para tener una base con la cual podamos probar mas adelante el codigo. Luego de esto, iniciamos creando las funciones del codigo del programa del ahorcado, apoyandonos en diversos materiales que encontramos en internet para comprender ciertos errores que pudieramos tener al momento de desarrollar nuestro codigo.
+
+
+
 **4. Diagrama de la funcionalidad general del programa:**
 
 ``` mermaid
