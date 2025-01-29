@@ -67,7 +67,7 @@ Para realizar el ahorcado hemos decidido usar diversas funciones relacionadas a 
 
 Primero e hizo un analisis del juego en cuestion para entender su funcionamiento y que herramientas podriamos usar para realizarlo, también se consultaron videos, paginas y documentos en donde se realizo una lluvia de ideas la cual se utilizo para realizar el diagrama de flujo comprendiendo a profundidad el juego y su estructura lógica.
 
-A partir del diagrama, iniciamos la construcción del banco de palabras para tener una base con la cual podamos probar mas adelante el codigo. Luego de esto, iniciamos creando las funciones del codigo del programa del ahorcado, apoyandonos en diversos materiales que encontramos en internet para comprender ciertos errores que pudieramos tener al momento de desarrollar nuestro codigo.
+A partir del diagrama, iniciamos la construcción del banco de palabras el cual consiste de 1000 palabras el cual se elijirá aleatoriamente para tener una base que podamos probar mas adelante el codigo. Luego de esto, iniciamos creando las funciones del codigo del programa del ahorcado, apoyandonos en diversos materiales que encontramos en internet para comprender ciertos errores que pudieramos tener al momento de desarrollar nuestro codigo.
 
 
 
@@ -154,4 +154,22 @@ classDef yellow fill:#FFF9C4,stroke:#FBC02D,stroke-width:2px;
 classDef pink fill:#F8BBD0,stroke:#C2185B,stroke-width:2px;
 classDef purple fill:#E1BEE7,stroke:#8E24AA,stroke-width:2px;
 
+```
+
+**5. Desarrollo del codigo y notebook:**<br>
+**5.1. Banco de palabras.**
+Para esta parte inicial se construyó un archivo de texto con una lista de más de 1000 palabras, para posteriormente crear un código en el que por medio de las carpetas se pueda abrir el archivo en forma de texto y suprimiendo los espacios para generar una lista aleatoria en donde se elija una de ellas por medio de una ruta en el directorio.<br>
+
+``` python
+import random #Importar el modulo que permite elegir aleatoriamente
+
+def obtener_palabra_aleatoria(palabras): #Se define la función principal
+    archivo = open(palabras, 'r', encoding='utf-8') # 'r' para tener modo lectura y 'utf-8' una codificación evitando que quede mal escritas las palabras con caracteres especiales
+    palabras = [palabra.strip() for palabra in archivo.readlines()] #Elimina espacios y saltos de línea y crea una lista con palabras limpias
+    archivo.close() #Cerramos el archivo
+    return random.choice(palabras)
+
+ruta = "C:/Users/pmafe/Documents/UNAL/programación/pdc/palabras.txt"  
+palabra = obtener_palabra_aleatoria(ruta)
+print("Palabra aleatoria:", palabra) #Imprimimos de manera aleatoria la palabra seleccionada
 ```
