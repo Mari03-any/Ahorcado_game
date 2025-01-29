@@ -69,8 +69,7 @@ Primero e hizo un analisis del juego en cuestion para entender su funcionamiento
 
 **4. Diagrama de la funcionalidad general del programa:**
 
-```
-Mermeid:
+``` mermaid
 
 flowchart TD
 %% Nodes
