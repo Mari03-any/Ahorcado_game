@@ -40,15 +40,33 @@ https://www.aplitop.com/products/tcpMDT/v8/help/es/referencia/dibujar_a_partir_d
 https://es.py4e.com/html3/15-database
 
 ---
+<div align=center>
+  <img src="https://cdiac.manizales.unal.edu.co/imagenes/LogosMini/un.png" alt="Escudo_UN" width="277" height="118">
+</div>  <br>
+
+# **PROYECTO FINAL PROGRAMACIÓN DE COMPUTADORES**
+
+ **NOMBRE DEL EQUIPO:** Wizards of cOdeZ.
+
+ **INTEGRANTES:**
+ - Parra Osorio Maria Fernanda
+ - Ramirez  Rodriguez Nicolás
+ - Monroy Gómez Nicolás Alejandro
 
 En este repositorio abarcaremos la alternativa número 2: El ahorcado. 
 
-1. Solución planteada:
-Para realizar el ahorcado hemos decidido usar diversas funciones relacionadas a la selección de palabras, las cuales estarán almacenadas en una lista y se escogerá cualquiera de ellas para iniciar el juego. De igual manera una con la que, dependiendo de la posición de cada letra de la palabra y la letra que se ingrese por consola, se hará un acierto y se podrá continuar con la siguiente letra, actualizando la palabra escogida; o se empezara a dibujar el ahorcado por medio de prints, reduciendo el número de oportunidades y actualizando el dibujo del ahorcado en cada intento erróneo hasta que el dibujo se complete.
+**1. Objetivo del proyecto:**
 
-2. Como abordamos el problema:
+Desarrollar la alternativa escogida en python, usando y aplicando los conocimientos adquiridos durante el semestre por medio de las clases y los retos.
 
+**2. Solución planteada:**
 
-3. Diagrama:
+Para realizar el ahorcado hemos decidido usar diversas funciones relacionadas a la selección de palabras, las cuales estarán almacenadas en una lista y se escogerá cualquiera de ellas para iniciar el juego. De igual manera una con la que, dependiendo de la posición de cada letra de la palabra que fue ingresada en la consola, sera un acierto y se podrá continuar con la siguiente letra, actualizando la palabra escogida; o se empezara a dibujar el ahorcado por medio de prints, reduciendo el número de oportunidades y actualizando el dibujo del ahorcado en cada intento erróneo hasta que el dibujo se complete.
 
-4. Notebook de python
+**3. Como abordamos el problema:**
+
+Primero e hizo un analisis del juego en cuestion para entender su funcionamiento y que herramientas podriamos usar para realizarlo, también se consultaron videos, paginas y documentos en donde se realizo una lluvia de ideas la cual se utilizo para realizar el diagrama de flujo comprendiendo a profundidad el juego y su estructura lógica.
+
+**4. Diagrama de la funcionalidad general del programa:**
+
+**5. Notebook de python:**
