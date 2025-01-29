@@ -69,4 +69,87 @@ Primero e hizo un analisis del juego en cuestion para entender su funcionamiento
 
 **4. Diagrama de la funcionalidad general del programa:**
 
+```
+Mermeid:
+
+flowchart TD
+%% Nodes
+A(" Inicio"):::green
+B1("Generar una palabra"):::orange
+B("intentos_fallidos = 0 "):::orange
+C("Evaluar la longitud de la palabra"):::blue
+D("Imprimir la longitud de la palabra
+n = leng..."):::blue
+E("Convertir la palabra a incognita
+(Reemplazar las letras por guiones)"):::yellow
+F("Ingresar una palabra"):::pink
+G{"leng (palabra ingresada) == leng (palabra generada)?"}:::purple
+H("Dividir la palabra generada"):::green
+I("No corresponde a la cantidad de letras"):::orange
+J("cada letra = objeto de una lista"):::orange
+K("Divide la palabra ingresada"):::orange
+L("cada letra = objeto de una lista"):::orange
+M("Recorrer cada letra de palabra ingresada en la lista de la palabra generada"):::orange
+N{"La letra corresponde a un objeto en lista de la palabra generada?"}:::purple
+O("Imprime la letra en la posicion que va"):::orange
+P("No imprime la letra "):::orange
+Q{"Es la ultima letra de la palabra ingresada?"}:::orange
+R(" Acaba con el recorrido"):::orange
+S("Sigue con la siguiente letra de la palabara ingresada "):::orange
+T{"Palabra ingresada == palabra generada?"}:::purple
+U("has ganado"):::orange
+V("intentos_fallidos += 1 "):::orange
+W{"intentos_fallidos == 1 "}:::orange
+X{"intentos fallidos == 2 "}:::orange
+Y("imprimir la base del ahorcado "):::orange
+Z{"intentos fallidos == 3 "}:::orange
+A1("imprimir la base del ahorcado + la soga y la cabeza "):::orange
+C1{"intentos fallidos == 4"}:::orange
+D1("agrega el torso y el brazo izquierdo"):::orange
+E1{"intentos fallidos == 5"}:::orange
+F1("agrega el brazo derecho"):::orange
+G1{"intentos fallidos == 6"}:::orange
+H1("agrega la pierna izquierda"):::orange
+I1("agrega la pierna derecha"):::orange
+J1("Perdiste, la palabra a adivinar era -palabra_generada-"):::orange
+
+
+%% Edges
+A --> B --> B1 --> C --> D
+D --> E --> F --> G
+G -- Yes --> H
+G -- No --> I --> F
+H --> J --> K --> L 
+L --> M --> N
+N -- Yes --> O
+N -- No --> P
+O --> Q
+P --> Q
+Q -- Yes --> R
+Q -- No --> S --> N
+R --> T 
+T -- Yes --> U
+T -- No --> V --> W
+W -- Sino --> X
+W -- Yes --> Y --> F
+X -- Sino --> Z
+X -- Yes --> A1 --> F
+Z -- Sino --> C1
+Z -- Yes --> D1 --> F
+C1 -- Sino --> E1
+C1 -- Yes --> F1 --> F
+E1 -- Sino --> G1
+E1 -- Yes --> H1 --> F
+G1 --> I1 --> J1
+
+```
+
+%% Styling
+classDef green fill:#B2DFDB,stroke:#00897B,stroke-width:2px;
+classDef orange fill:#FFE0B2,stroke:#FB8C00,stroke-width:2px;
+classDef blue fill:#BBDEFB,stroke:#1976D2,stroke-width:2px;
+classDef yellow fill:#FFF9C4,stroke:#FBC02D,stroke-width:2px;
+classDef pink fill:#F8BBD0,stroke:#C2185B,stroke-width:2px;
+classDef purple fill:#E1BEE7,stroke:#8E24AA,stroke-width:2px;
+
 **5. Notebook de python:**
