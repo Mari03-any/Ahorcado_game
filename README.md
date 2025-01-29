@@ -247,4 +247,7 @@ print("Palabra aleatoria:", palabra) #Imprimimos de manera aleatoria la palabra 
         print("      |")
         print("=========")
      ```
-- Funciones xx
+- Funciones
+  Se definieron las funciones con respecto a las palabras, letras, variables; en la cual nos genera el juego del ahorcado.
+  
+  ## *fin*
