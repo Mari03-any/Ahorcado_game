@@ -111,7 +111,7 @@ G1{"intentos fallidos == 6"}:::orange
 H1("agrega la pierna izquierda"):::orange
 I1("agrega la pierna derecha"):::orange
 J1("Perdiste, la palabra a adivinar era -palabra_generada-"):::orange
-
+K1("Fin"):::green
 
 %% Edges
 A --> B --> B1 --> C --> D
@@ -139,7 +139,7 @@ C1 -- Sino --> E1
 C1 -- Yes --> F1 --> F
 E1 -- Sino --> G1
 E1 -- Yes --> H1 --> F
-G1 --> I1 --> J1
+G1 --> I1 --> J1 --> K1
 
 %% Styling
 classDef green fill:#B2DFDB,stroke:#00897B,stroke-width:2px;
