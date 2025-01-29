@@ -247,7 +247,115 @@ print("Palabra aleatoria:", palabra) #Imprimimos de manera aleatoria la palabra 
         print("      |")
         print("=========")
      ```
+
 - Funciones
   Se definieron las funciones con respecto a las palabras, letras, variables; en la cual nos genera el juego del ahorcado.
-  
+    ``` python
+    def generar_palabra_aleatoria(palabras):
+  # Se define esta funcion para seleccionar una palabra en el rango de la lista.
+    indice = random.randint(0, len(palabras) - 1)
+    return palabras[indice] #retorna una palabra aleatoria que este dentro de la lista
+
+def evaluar_palabra(palabra_generada, palabra_ingresada, letras_descubiertas):
+    resultado = list(letras_descubiertas) 
+    # Se crean listas de posiciones disponibles para cada letra en la palabra ingresada
+    letras_disponibles = {}
+    for i in range(len(palabra_ingresada)): #Aqui se recorre la cantidad de letras de la palabra
+        letra = palabra_ingresada[i]
+        if letra not in letras_disponibles: #si la letra no corresponde no se agrega o imprime vacio
+            letras_disponibles[letra] = []
+        letras_disponibles[letra].append(i) #si corresponde entonces se agrega al final de la lista
+
+    # Primero: encontrar coincidencias exactas
+    for i in range(len(palabra_generada)):
+        if palabra_generada[i] == palabra_ingresada[i]: #evalua si la letra coincide en la misma posicion
+            resultado[i] = palabra_generada[i]
+            # Remover esta posición de las letras disponibles si existe
+            if palabra_ingresada[i] in letras_disponibles and i in letras_disponibles[palabra_ingresada[i]]: 
+                letras_disponibles[palabra_ingresada[i]].remove(i) #Se remueve si no coinciden
+
+    # Segundo: encontrar letras en posiciones diferentes
+    for i in range(len(palabra_generada)):
+        if resultado[i] == '*':  # Si aún no hemos encontrado esta letra
+            letra_buscada = palabra_generada[i]
+            if letra_buscada in letras_disponibles and letras_disponibles[letra_buscada]: #Condicion para buscar la letra en una posicion distinta de la palabra generada o si se repite en diferentes posiciones
+                # Hay una posición disponible para esta letra
+                pos = letras_disponibles[letra_buscada][0]
+                resultado[i] = letra_buscada
+                letras_disponibles[letra_buscada].pop(0)
+
+    return ''.join(resultado)
+
+def mostrar_estado_juego(intentos, intentos_maximos, palabra_longitud, letras_descubiertas=None):
+    print("JUEGO DEL AHORCADO")
+    print("==================")
+    dibujar_ahorcado(intentos)
+    print("La palabra tiene "+ str(palabra_longitud) +" letras")
+    if letras_descubiertas:
+        print("Progreso actual: "+ str (letras_descubiertas))
+    print("Intentos restantes: " + str(intentos_maximos - intentos))
+    print("==================")
+
+def combinar_progreso(progreso_anterior, nuevo_progreso): #funcion para conocer el progreso, evalua el progeso anterior con el nuevo, entonces genera un progreso actual
+    resultado = ''
+    for i in range(len(progreso_anterior)):
+        if nuevo_progreso[i] != '*':
+            resultado += nuevo_progreso[i]
+        else:
+            resultado += progreso_anterior[i]
+    return resultado
+
+def jugar_ahorcado():
+  #se llaman las funciones anteriores como variables
+    palabras = leer_banco_palabras()
+    palabra_misteriosa = generar_palabra_aleatoria(palabras).lower().strip()
+    intentos_maximos = 6
+    intentos_realizados = 0
+    letras_descubiertas = '*' * len(palabra_misteriosa)
+
+    print("¡Bienvenido al Juego del Ahorcado!")
+    print("La palabra tiene ",(len(palabra_misteriosa)), "letras")
+    
+
+    #Actualizacion y control del estado de juego
+    while intentos_realizados < intentos_maximos:
+        mostrar_estado_juego(intentos_realizados, intentos_maximos,
+                           len(palabra_misteriosa), letras_descubiertas)
+
+        palabra_usuario = input("Ingresa una palabra: ").lower().strip()
+
+        if len(palabra_usuario) != len(palabra_misteriosa):
+            print("Error: La palabra debe tener ",(len(palabra_misteriosa)), " letras.")
+            continue
+
+        # Guardamos el estado actual antes de evaluar
+        progreso_anterior = letras_descubiertas
+
+        # Evaluamos el nuevo intento
+        nuevo_progreso = evaluar_palabra(palabra_misteriosa, palabra_usuario, letras_descubiertas)
+
+        # Combinamos el progreso anterior con el nuevo usando la nueva función
+        letras_descubiertas = combinar_progreso(progreso_anterior, nuevo_progreso)
+
+        intentos_realizados += 1
+        print("Intento", (intentos_realizados),":", (palabra_usuario))
+
+        if letras_descubiertas == palabra_misteriosa:
+            mostrar_estado_juego(intentos_realizados, intentos_maximos,
+                               len(palabra_misteriosa), letras_descubiertas)
+            print("\n¡Felicitaciones! ¡Has ganado!")
+            print("En efecto, la palabra era: ",(palabra_misteriosa))
+            return
+
+        if intentos_realizados == intentos_maximos:
+            mostrar_estado_juego(intentos_realizados, intentos_maximos,
+                               len(palabra_misteriosa), letras_descubiertas)
+            print("¡Game Over! Te has quedado sin intentos")
+            print("La palabra era: ",(palabra_misteriosa))
+            return
+
+if __name__ == "__main__":
+    jugar_ahorcado()
+  ```
+    
   ## *fin*
