@@ -159,6 +159,18 @@ classDef purple fill:#E1BEE7,stroke:#8E24AA,stroke-width:2px;
 **5. Desarrollo del codigo y notebook:**<br>
 **5.1. Banco de palabras.**
 Para esta parte inicial se construyó un archivo de texto con una lista de más de 1000 palabras, para posteriormente crear un código en el que por medio de las carpetas se pueda abrir el archivo en forma de texto y suprimiendo los espacios para generar una lista aleatoria en donde se elija una de ellas por medio de una ruta en el directorio.<br>
+``` python
+import random #Importar el modulo que permite elegir aleatoriamente
+
+def leer_banco_palabras(): #Se define la función principal
+    palabras = []
+    archivo = open('palabras.txt', 'r', encoding='utf-8') # Abre el archivo, 'r' para tener modo lectura y 'utf-8' una codificación evitando que quede mal escritas las palabras con caracteres especiales
+    for linea in archivo:
+        palabras.append(linea.strip())  #Elimina espacios y saltos de línea 
+    archivo.close() #Cerramos el archivo
+    return palabras
+```
+- En caso de que el código anterior genere un error utilizar el siguiente código: <br>
 
 ``` python
 import random #Importar el modulo que permite elegir aleatoriamente
@@ -173,3 +185,66 @@ ruta = "C:/Users/pmafe/Documents/UNAL/programación/pdc/palabras.txt"
 palabra = obtener_palabra_aleatoria(ruta)
 print("Palabra aleatoria:", palabra) #Imprimimos de manera aleatoria la palabra seleccionada
 ```
+
+**5.2. Código del juego.**
+- Dibujo del hangman:
+  ``` python
+  def dibujar_ahorcado(intentos): # Se define esta función para generar el dibujo según el número de intentos
+    if intentos == 0:
+        print("  +---+")
+        print("  |   |")
+        print("      |")
+        print("      |")
+        print("      |")
+        print("      |")
+        print("=========")
+    elif intentos == 1:
+        print("  +---+")
+        print("  |   |")
+        print("  O   |")
+        print("      |")
+        print("      |")
+        print("      |")
+        print("=========")
+    elif intentos == 2:
+        print("  +---+")
+        print("  |   |")
+        print("  O   |")
+        print("  |   |")
+        print("      |")
+        print("      |")
+        print("=========")
+    elif intentos == 3:
+        print("  +---+")
+        print("  |   |")
+        print("  O   |")
+        print(" /|   |")
+        print("      |")
+        print("      |")
+        print("=========")
+    elif intentos == 4:
+        print("  +---+")
+        print("  |   |")
+        print("  O   |")
+        print(" /|\\  |")
+        print("      |")
+        print("      |")
+        print("=========")
+    elif intentos == 5:
+        print("  +---+")
+        print("  |   |")
+        print("  O   |")
+        print(" /|\\  |")
+        print(" /    |")
+        print("      |")
+        print("=========")
+    elif intentos == 6:
+        print("  +---+")
+        print("  |   |")
+        print("  O   |")
+        print(" /|\\  |")
+        print(" / \\  |")
+        print("      |")
+        print("=========")
+     ```
+  - Funciones xx
