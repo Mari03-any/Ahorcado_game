@@ -48,6 +48,10 @@ https://es.py4e.com/html3/15-database
 
  **NOMBRE DEL EQUIPO:** Wizards of cOdeZ.
 
+<div align=center>
+  <img src="https://postimg.cc/Snz85Hn1" alt="Escudo_UN" width="277" height="118">
+</div>  <br>
+
  **INTEGRANTES:**
  - Parra Osorio Maria Fernanda
  - Ramirez  Rodriguez Nicolás
