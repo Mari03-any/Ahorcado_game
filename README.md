@@ -42,7 +42,7 @@ Criterios evaluación avance: claridad de la exposición (20%), calidad de entre
  **NOMBRE DEL EQUIPO:** Wizards of cOdeZ.
 
 <p align="center">
-  <img src="https://i.postimg.cc/py6mHqbw/image.png" alt="Descripción de la imagen" width="400">
+  <img src="https://i.postimg.cc/6qThqwG7/Designer.jpg" alt="Wizards_of_cOdeZ" width="400">
 </p>
 
 
