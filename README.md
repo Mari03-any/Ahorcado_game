@@ -362,5 +362,8 @@ def jugar_ahorcado():
 if __name__ == "__main__":
     jugar_ahorcado()
   ```
-    
+  # **Final_code** <br>
+  Este codigo consiste en la unión de todos los elementos ya utilizados anteriormente, agregando niveles de dificultad, otros idiomas y la interfaz gráfica. Además el codigo mantiene la cantidad de intentos dependiendo de las partes del hangman.<br>
+  ``` pyhton
+  ``` 
   ## *fin*
