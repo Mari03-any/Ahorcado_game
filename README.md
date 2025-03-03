@@ -31,13 +31,6 @@ Manejo de jugadores (2 juegos simultaneos)
 Avance (10%)
 Definición de alternativa - Diagramas preliminares - Solución preliminar -> Exposición oral, 10 minutos.
 Criterios evaluación avance: claridad de la exposición (20%), calidad de entregables (40%), temas del curso adecuadamente empleados (40%).
-#### Paginas
-- Pseudocodigo:
-https://openwebinars.net/blog/como-programar-el-juego-del-ahorcado-paso-paso/
-- Dibujos:
-https://www.aplitop.com/products/tcpMDT/v8/help/es/referencia/dibujar_a_partir_de_codigos.htm
-- Base de datos:
-https://es.py4e.com/html3/15-database
 
 ---
 <div align=center>
@@ -365,5 +358,18 @@ if __name__ == "__main__":
   # **Final_code** <br>
   Este codigo consiste en la unión de todos los elementos ya utilizados anteriormente, agregando niveles de dificultad, otros idiomas y la interfaz gráfica. Además el codigo mantiene la cantidad de intentos dependiendo de las partes del hangman.<br>
   ``` pyhton
-  ``` 
+  ```
+#### *Referencias*:
+- Pseudocodigo:
+https://openwebinars.net/blog/como-programar-el-juego-del-ahorcado-paso-paso/
+- Dibujos:
+https://www.aplitop.com/products/tcpMDT/v8/help/es/referencia/dibujar_a_partir_de_codigos.htm
+- Base de datos:
+https://es.py4e.com/html3/15-database
+- Interfaz Gráfica:
+https://youtu.be/udMobmTHESo?si=DNqS3pZLSIWpRRw8
+- Guias para ahorcado_game(proyecto):
+Vergara, M. (2023). Apuntes Python. Recuperado de https://vergaracarmona.es <br>
+Fundación Telefónica Tech. (2023). El juego del ahorcado.
+---
   ## *fin*
