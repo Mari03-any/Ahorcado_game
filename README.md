@@ -1049,12 +1049,33 @@ if __name__ == "__main__":
 Primero, hay que descargar python (en el caso de tener Windows) para el correcto funcionamiento del programa, luego de tenerlo instalado hay que instalar dos modulos (mediante `pip`):
 
 - `tkinter`
+- Tkinter (abreviado como tk) es la biblioteca estándar de Python para crear interfaces gráficas de usuario (GUI). El módulo tk proporciona las herramientas fundamentales para desarrollar aplicaciones con ventanas, botones, campos de texto y otros elementos visuales     interactivos.
+- `tk`
+- Para qué se usa tk:
+
+  Crear ventanas y elementos gráficos visibles para el usuario
+  Gestionar eventos como clics de ratón o pulsaciones de teclas
+  Organizar elementos visuales mediante sistemas de geometría (pack, grid, place)
+  Personalizar la apariencia de las aplicaciones con colores, fuentes y estilos
+- `messagebox`
+- Para qué se usa messagebox:
+
+Mostrar mensajes informativos al usuario (showinfo)
+Presentar advertencias sobre posibles problemas (showwarning)
+Indicar errores que han ocurrido (showerror)
+Hacer preguntas que requieren respuesta (askquestion, askyesno)
+Solicitar confirmación antes de realizar acciones importantes (askokcancel)
+Interrumpir temporalmente el flujo de la aplicación para garantizar que el usuario ve el mensaje
 - `random`
 
 Ya despues de eso, solo hay que localizar el archivo, dar clic derecho sobre el, abrirlo con la terminal de python que se instaló anteriormente y listo, podremos jugar al ahorcado.
 
 
 #### *Referencias*:
+- tkinter— Interfaz de Python para Tcl/Tk :
+https://docs.python.org/3/library/tkinter.html
+- tkinter.messagebox — Tkinter message prompts:
+https://docs.python.org/3/library/tkinter.messagebox.html 
 - Pseudocodigo:
 https://openwebinars.net/blog/como-programar-el-juego-del-ahorcado-paso-paso/
 - Dibujos:
