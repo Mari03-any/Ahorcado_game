@@ -359,6 +359,16 @@ if __name__ == "__main__":
   Este codigo consiste en la unión de todos los elementos ya utilizados anteriormente, agregando niveles de dificultad, otros idiomas y la interfaz gráfica. Además el codigo mantiene la cantidad de intentos dependiendo de las partes del hangman.<br>
   ``` pyhton
   ```
+
+#### Como instalar el desarrollo para su uso:
+Primero, hay que descargar python (en el caso de tener Windows) para el correcto funcionamiento del programa, luego de tenerlo instalado hay que instalar dos modulos (mediante `pip`):
+
+- `tkinter`
+- `random`
+
+Ya despues de eso, solo hay que localizar el archivo, dar clic derecho sobre el, abrirlo con la terminal de python que se instaló anteriormente y listo, podremos jugar al ahorcado.
+
+
 #### *Referencias*:
 - Pseudocodigo:
 https://openwebinars.net/blog/como-programar-el-juego-del-ahorcado-paso-paso/
