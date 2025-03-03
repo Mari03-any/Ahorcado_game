@@ -359,7 +359,7 @@ if __name__ == "__main__":
   Este codigo consiste en la unión de todos los elementos ya utilizados anteriormente, agregando niveles de dificultad, otros idiomas y la interfaz gráfica. Además el codigo mantiene la cantidad de intentos dependiendo de las partes del hangman.<br>
   ``` pyhton
 import tkinter as tk
-from tkinter import ttk, messagebox
+from tkinter import messagebox
 import random
 
 class AhorcadoGUI:
