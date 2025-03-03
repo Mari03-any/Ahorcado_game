@@ -48,9 +48,10 @@ https://es.py4e.com/html3/15-database
 
  **NOMBRE DEL EQUIPO:** Wizards of cOdeZ.
 
-<div align=center>
-  <img src="https://postimg.cc/Snz85Hn1" alt="Escudo_UN" width="277" height="118">
-</div>  <br>
+<p align="center">
+  <img src="https://i.postimg.cc/py6mHqbw/image.png" alt="Descripción de la imagen" width="400">
+</p>
+
 
  **INTEGRANTES:**
  - Parra Osorio Maria Fernanda
