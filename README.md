@@ -368,8 +368,8 @@ https://www.aplitop.com/products/tcpMDT/v8/help/es/referencia/dibujar_a_partir_d
 https://es.py4e.com/html3/15-database
 - Interfaz Gráfica:
 https://youtu.be/udMobmTHESo?si=DNqS3pZLSIWpRRw8
-- Guias para ahorcado_game(proyecto):
-Vergara, M. (2023). Apuntes Python. Recuperado de https://vergaracarmona.es <br>
-Fundación Telefónica Tech. (2023). El juego del ahorcado.
+- Guias para ahorcado_game(proyecto): <br>
+Vergara, M. (2023). *Apuntes Python*. Recuperado de https://vergaracarmona.es <br>
+Fundación Telefónica Tech. (2023). *El juego del ahorcado.*
 ---
   ## *fin*
